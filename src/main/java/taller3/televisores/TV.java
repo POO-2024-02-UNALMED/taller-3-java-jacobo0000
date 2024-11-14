@@ -16,8 +16,14 @@ public class TV {
   }
   
   public void canalUp(){
-    if(estado == true && canal < 120){
-      canal += 1;
+    if(estado == true){
+      if(canal < 120){
+        canal += 1;
+      }else{
+        canal = 1;
+      }
+
+      
     }
   }
 
@@ -56,7 +62,9 @@ public class TV {
   }
 
   public void setCanal(int canalNuevo){
-    canal = canalNuevo;
+    if(canalNuevo <= 120 && canalNuevo >= 1){
+      canal = canalNuevo;
+    } 
   }
 
   public void setPrecio(int precioNuevo){
@@ -64,7 +72,10 @@ public class TV {
   }
 
   public void setVolumen(int volumenNuevo){
-    volumen = volumenNuevo;
+    if(volumenNuevo <= 7 && volumenNuevo >= 1){
+      volumen = volumenNuevo;
+    }
+    
   }
 
   public void setControl(Control controlNuevo){
