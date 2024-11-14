@@ -12,6 +12,7 @@ public class TV {
   public TV(Marca marcaI, boolean estadoI){
     marca = marcaI;
     estado = estadoI; 
+    numTV += 1;
   }
   
   public void canalUp(){
@@ -46,7 +47,7 @@ public class TV {
     estado = false;
   }
 
-  public void setNumTV(int numTVNuevo){
+  static public void setNumTV(int numTVNuevo){
     numTV = numTVNuevo;
   }
 
@@ -70,7 +71,7 @@ public class TV {
     control = controlNuevo;
   }
 
-  public int getNumTV(){
+  static public int getNumTV(){
     return numTV;
   }
 
