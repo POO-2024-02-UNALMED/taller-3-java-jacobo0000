@@ -22,13 +22,13 @@ public class TV {
   }
 
   public void canalDown(){
-    if(estado == true && canal > 1){
+    if(estado == true && canal > 0){
       canal -= 1;
     }
   }
 
   public void volumenUp(){
-    if(estado == true && volumen < 7){
+    if(estado == true && volumen < 7 ){
       volumen += 1;
     }
   }
@@ -67,7 +67,7 @@ public class TV {
   }
 
   public void setVolumen(int volumenNuevo){
-    if(estado == true && volumenNuevo <= 7 && volumenNuevo >= 1){
+    if(estado == true && volumenNuevo <= 7 && volumenNuevo >= 0){
       volumen = volumenNuevo;
     }
     
