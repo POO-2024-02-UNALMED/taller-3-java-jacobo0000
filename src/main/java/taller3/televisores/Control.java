@@ -9,27 +9,19 @@ public class Control {
   }
 
   public void canalUp(){
-    if(tv.estado == true && tv.canal < 120){
-      tv.canal += 1;
-    }
+    tv.canalUp();
   }
 
   public void canalDown(){
-    if(tv.estado == true && tv.canal > 1){
-      tv.canal -= 1;
-    }
+    tv.canalDown();
   }
 
   public void volumenUp(){
-    if(tv.estado == true && tv.volumen < 7){
-      tv.volumen += 1;
-    }
+    tv.volumenUp();
   }
 
   public void volumenDown(){
-    if(tv.estado == true && tv.volumen > 1){
-      tv.volumen -= 1;
-    }
+    tv.volumenDown();
   }
 
   public void turnOn(){
