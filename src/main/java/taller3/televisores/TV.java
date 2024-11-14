@@ -48,15 +48,16 @@ public class TV {
   }
 
   static public void setNumTV(int numTVNuevo){
-    numTV = numTVNuevo;
-  }
+      numTV = numTVNuevo;
+    }
+    
 
   public void setMarca(Marca marcaNueva){
     marca = marcaNueva;
   }
 
   public void setCanal(int canalNuevo){
-    if(canalNuevo <= 120 && canalNuevo >= 1){
+    if(estado == true && canalNuevo <= 120 && canalNuevo >= 1){
       canal = canalNuevo;
     } 
   }
@@ -66,7 +67,7 @@ public class TV {
   }
 
   public void setVolumen(int volumenNuevo){
-    if(volumenNuevo <= 7 && volumenNuevo >= 1){
+    if(estado == true && volumenNuevo <= 7 && volumenNuevo >= 1){
       volumen = volumenNuevo;
     }
     
