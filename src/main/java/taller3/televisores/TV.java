@@ -17,25 +17,25 @@ public class TV {
   
   public void canalUp(){
     if(estado == true && canal < 120){
-      canal = canal + 1;
+      canal += 1;
     }
   }
 
   public void canalDown(){
     if(estado == true && canal > 1){
-      canal = canal - 1;
+      canal -= 1;
     }
   }
 
   public void volumenUp(){
     if(estado == true && volumen < 7){
-      volumen = volumen + 1;
+      volumen += 1;
     }
   }
 
   public void volumenDown(){
     if(estado == true && volumen > 1){
-      volumen = volumen - 1;
+      volumen -= 1;
     }
   }
 
